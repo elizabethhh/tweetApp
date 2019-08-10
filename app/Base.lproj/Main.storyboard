@@ -116,16 +116,31 @@
                                     <action selector="homeButton:" destination="Q8B-oT-miU" eventType="touchUpInside" id="mQc-JH-6of"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="person you should vote for:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b50-KW-6iO">
+                                <rect key="frame" x="20" y="307" width="370" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="KjQ-6a-yli"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Dpg-Wb-xri" firstAttribute="top" secondItem="2Pl-bf-oEx" secondAttribute="top" constant="25" id="7Ia-l5-vKu"/>
                             <constraint firstItem="jE8-db-e3c" firstAttribute="centerY" secondItem="2Pl-bf-oEx" secondAttribute="centerY" id="DJg-zv-8Yf"/>
                             <constraint firstItem="2Pl-bf-oEx" firstAttribute="trailing" secondItem="Dpg-Wb-xri" secondAttribute="trailing" constant="30" id="GfT-QV-U90"/>
+                            <constraint firstItem="b50-KW-6iO" firstAttribute="centerX" secondItem="2Pl-bf-oEx" secondAttribute="centerX" id="NU3-Gs-xSA"/>
                             <constraint firstItem="jE8-db-e3c" firstAttribute="centerX" secondItem="2Pl-bf-oEx" secondAttribute="centerX" id="YEq-7v-rDN"/>
+                            <constraint firstItem="jE8-db-e3c" firstAttribute="top" secondItem="b50-KW-6iO" secondAttribute="bottom" constant="60" id="roW-ND-Xt2"/>
+                            <constraint firstItem="b50-KW-6iO" firstAttribute="top" secondItem="CK6-Dx-n7y" secondAttribute="top" constant="307" id="vcJ-fT-iJy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Pl-bf-oEx"/>
                     </view>
+                    <connections>
+                        <outlet property="endLabel" destination="jE8-db-e3c" id="cxg-bN-otu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6N-FB-YYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
