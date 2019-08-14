@@ -24,7 +24,7 @@ class EndAppViewController: UIViewController {
         //right now we will assume there is one person, so they will be winning
         //iterate over dictionary
         var maximum = pointValue["person1"]
-        var max_key = ""
+        var max_key = "person1"
         //for (author, point) in getValue{
         for (author, point) in pointValue{
             if point > maximum ?? -100 {

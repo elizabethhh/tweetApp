@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TwitterKit
 var pointValue : [String: Int] = [:]
 
 class ViewController: UIViewController {
@@ -23,8 +24,6 @@ class ViewController: UIViewController {
     ]
     //starts at 0 to display first index
     var counter = 0
-    
-    
     
     
     @IBOutlet weak var quoteLabel: UILabel!
