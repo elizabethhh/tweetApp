@@ -18,36 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2019-08-17 at 9.28.33 PM" translatesAutoresizingMaskIntoConstraints="NO" id="JvV-jz-z7X">
-                                <rect key="frame" x="47" y="287" width="320" height="332"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newlogo" translatesAutoresizingMaskIntoConstraints="NO" id="JvV-jz-z7X">
+                                <rect key="frame" x="39" y="268" width="336" height="370"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPW-eu-jdx">
-                                <rect key="frame" x="176" y="657" width="62" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="98.5" y="676" width="217" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="GLx-jB-ZID"/>
+                                    <constraint firstAttribute="height" constant="78" id="LNc-wG-RNT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startButton:" destination="PGj-CL-06p" eventType="touchUpInside" id="3KE-JV-TU1"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Learn who to vote for now!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TJO-Ub-9rv">
-                                <rect key="frame" x="85.5" y="182" width="243" height="32"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2019-08-19 at 12.15.20 AM" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-If-qJd">
+                                <rect key="frame" x="38.5" y="134" width="337" height="164"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="SZG-rW-1pm"/>
-                                    <constraint firstAttribute="width" constant="243" id="aEx-Y1-lJ4"/>
+                                    <constraint firstAttribute="height" constant="164" id="XXl-E9-yij"/>
+                                    <constraint firstAttribute="width" constant="337" id="bSz-ja-noh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstart" translatesAutoresizingMaskIntoConstraints="NO" id="iGf-Uk-0iA">
+                                <rect key="frame" x="98.5" y="676" width="217" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="Lrv-1k-KsA"/>
+                                    <constraint firstAttribute="height" constant="78" id="oIa-uo-z1w"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CPW-eu-jdx" firstAttribute="top" secondItem="JvV-jz-z7X" secondAttribute="bottom" constant="38" id="8rD-4h-ndN"/>
                             <constraint firstItem="JvV-jz-z7X" firstAttribute="centerX" secondItem="DkX-q2-hV6" secondAttribute="centerX" id="BpZ-9V-7Qh"/>
-                            <constraint firstItem="JvV-jz-z7X" firstAttribute="top" secondItem="TJO-Ub-9rv" secondAttribute="bottom" constant="73" id="Ge5-xT-vBl"/>
-                            <constraint firstItem="TJO-Ub-9rv" firstAttribute="centerX" secondItem="DkX-q2-hV6" secondAttribute="centerX" id="LcC-Xn-1qh"/>
+                            <constraint firstItem="iGf-Uk-0iA" firstAttribute="top" secondItem="JvV-jz-z7X" secondAttribute="bottom" constant="38" id="NHo-cZ-BiS"/>
                             <constraint firstItem="CPW-eu-jdx" firstAttribute="centerX" secondItem="DkX-q2-hV6" secondAttribute="centerX" id="U2z-V3-ddm"/>
                             <constraint firstItem="JvV-jz-z7X" firstAttribute="centerY" secondItem="DkX-q2-hV6" secondAttribute="centerY" id="aws-cs-RHH"/>
+                            <constraint firstItem="VtD-If-qJd" firstAttribute="centerX" secondItem="DkX-q2-hV6" secondAttribute="centerX" id="haa-DL-2HK"/>
+                            <constraint firstItem="CPW-eu-jdx" firstAttribute="top" secondItem="JvV-jz-z7X" secondAttribute="bottom" constant="38" id="lp0-vR-Kpd"/>
+                            <constraint firstItem="JvV-jz-z7X" firstAttribute="top" secondItem="VtD-If-qJd" secondAttribute="bottom" constant="-30" id="myc-k3-Vvl"/>
+                            <constraint firstItem="iGf-Uk-0iA" firstAttribute="centerX" secondItem="DkX-q2-hV6" secondAttribute="centerX" id="o2V-4B-3FM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DkX-q2-hV6"/>
                     </view>
@@ -184,6 +194,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2019-08-17 at 9.28.33 PM" width="320" height="332"/>
+        <image name="Screen Shot 2019-08-19 at 12.15.20 AM" width="874" height="452"/>
+        <image name="newlogo" width="336" height="370"/>
+        <image name="newstart" width="724" height="288"/>
     </resources>
 </document>
